@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <Button
+        android:id="@+id/showToastBtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="SHOW TOAST" />
+
+    <Button
+        android:id="@+id/showImgBtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="SHOW IMAGE" />
+
+    <Button
+        android:id="@+id/showBooksBtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="SHOW BOOKS" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal">
+
+        <EditText
+            android:id="@+id/etInput"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:hint="Enter password" />
+
+        <Button
+            android:id="@+id/btnValidate"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:onClick="validate"
+            android:text="VALIDATE" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btnCalculatePi"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:onClick="calculatePi"
+            android:text="@string/calculate_pi" />
+
+        <ProgressBar
+            android:id="@+id/spinnerCalculatePi"
+            style="?android:attr/progressBarStyle"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_centerInParent="true"
+            android:layout_weight="1"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/tvPiResult"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center" />
+
+    </LinearLayout>
+
+
+</LinearLayout>
